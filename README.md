@@ -1,88 +1,111 @@
 # ✈️ Jet Survival Game — Pygame Arcade Mini-Project
 
-Fly your jet, dodge rockets, survive as long as possible, and track your time!  
-This mini-game is created using **Pygame** and features dynamic sprites, a survival timer, lives (hearts), and a replayable end screen.
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
+![Pygame](https://img.shields.io/badge/Game-Pygame-green)
+![Type-Arcade](https://img.shields.io/badge/Genre-Survival%20Arcade-orange)
+
+A fast-paced **2D survival arcade game** built with Pygame.  
+Dodge rockets, survive as long as possible, and beat your high score.
 
 ---
 
-🎮 FEATURES
+## 📸 Screenshot
 
-- ✈️ Playable Jet with WASD Controls  
-- 🚀 Incoming rockets with randomized speeds and spawn locations  
-- ☁️ Floating clouds for aesthetic background motion  
-- ❤️ 3-Heart health system that visually updates  
-- ⏱️ Survival timer display  
-- 🔁 Replay system after game over  
-- 💨 120 FPS for a smooth experience  
+*(Add gameplay screenshot here if available)*
 
 ---
 
-📁 FILES NEEDED
+## 🛠 Features
 
-- `jet.png` — player sprite  
-- `missile.png` — enemy sprite  
-- `cloud.png` — background cloud sprite  
-- `1heart.png`, `2hearts.png`, `3hearts.png` — life indicators  
-
----
-
-⚙️ REQUIREMENTS
-
-- Python 3.7+  
-- Pygame (Install with: `pip install pygame`)  
+- ✈️ Player-controlled jet (WASD movement)
+- 🚀 Randomized rocket enemies
+- ☁️ Animated cloud background
+- ❤️ 3-life health system with visual HUD
+- ⏱️ Survival timer tracking
+- 🔁 Restart system after game over
+- ⚡ Smooth 120 FPS gameplay loop
 
 ---
 
-🕹️ CONTROLS
+## 🚀 How to Run
 
-- `W` = Move Up  
-- `S` = Move Down  
-- `A` = Move Left  
-- `D` = Move Right  
-- `ESC` = Quit  
-- `R` = Restart (after game over)  
+### 1. Clone the repository
 
----
+git clone https://github.com/your-username/jet-survival-game.git
+cd jet-survival-game
 
-🚀 HOW TO PLAY
+### 2. Install dependencies
 
-1. Make sure all required image files are in the same directory as the script.
-2. Run the script with:
-   python your_script_name.py
-3. Use WASD to avoid incoming rockets.
-4. Each hit removes one heart. Survive as long as possible!
-5. After you lose all 3 hearts, you can restart or quit.
+pip install pygame
+
+### 3. Run the game
+
+python main.py
 
 ---
 
-📌 GAME LOOP LOGIC
+## 🎮 Controls
 
-- Real-time event handling for movement, quitting, and spawning.
-- Clouds and rockets are spawned every 1 second via timers.
-- Collision detection is done with `pygame.sprite.spritecollideany()`.
-- When hearts reach 0, survival time is displayed and game pauses.
-- Restarting the game resets sprites, timer, and health.
-
----
-
-🖼️ VISUAL EXAMPLES
-
-✔️ Health HUD is drawn at top-right using `1heart.png`, `2hearts.png`, and `3hearts.png`.  
-⏱️ Timer is rendered in real-time at the top-left.  
-🪂 Sprites are transformed and scaled for consistency and performance.  
+- W → Move Up
+- S → Move Down
+- A → Move Left
+- D → Move Right
+- ESC → Quit Game
+- R → Restart (after game over)
 
 ---
 
-📄 LICENSE
+## 📦 Required Assets
 
-This project is licensed for personal and educational use.  
-Make sure to credit asset authors if you use this in public projects.
+Make sure these files are in the same folder as the script:
+
+- jet.png
+- missile.png
+- cloud.png
+- 1heart.png
+- 2hearts.png
+- 3hearts.png
 
 ---
 
-🙏 CREDITS
+## ⚙️ How It Works
 
-- Pygame — for the 2D game development library  
-- Fonts: RobotoMono, Catamaran (used in `pygame.font.SysFont`)  
-- You — for making this even better!
+1. Game loop runs at 120 FPS
+2. Player movement handled via keyboard input
+3. Rockets spawn at timed intervals with random speed/position
+4. Collision detection reduces health
+5. HUD updates (timer + hearts) in real time
+6. Game over triggers restart screen
 
+---
+
+## 📌 Game Systems
+
+- 🎯 Sprite-based collision system
+- ⏱️ Real-time survival timer
+- ❤️ Dynamic health UI
+- 🌍 Background animation system
+- 🔁 Reset/restart state manager
+
+---
+
+## ⚡ Future Improvements
+
+- Add sound effects and music
+- Add difficulty scaling over time
+- Add power-ups (shields, slow motion)
+- Add score + leaderboard system
+- Add mobile / touch support version
+
+---
+
+## 💻 Technologies
+
+- Python 3.x
+- Pygame
+
+---
+
+## 📧 Contact
+
+Created by **Jimoulis31**
