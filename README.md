@@ -9,12 +9,6 @@ Dodge rockets, survive as long as possible, and beat your high score.
 
 ---
 
-## 📸 Screenshot
-
-*(Add gameplay screenshot here if available)*
-
----
-
 ## 🛠 Features
 
 - ✈️ Player-controlled jet (WASD movement)
